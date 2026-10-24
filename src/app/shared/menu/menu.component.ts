@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
   itensMenu = [
     {label: 'inicio', link:''},
-    {label: 'clientes', link:'clientes'},
+    {label: 'Cadastre-se', link: '/cliente-cadastro' },
     {label:'contas',link:'contas'},
     {label:'sobre', link:'sobre'}
   ];
